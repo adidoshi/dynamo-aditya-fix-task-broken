@@ -1,0 +1,12 @@
+{
+  "tasks": [
+    {
+      "path": "."
+    }
+  ],
+  "agents": [
+    {
+      "name": "oracle"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "8.4.1"
+        },
+        "summary": {
+            "tests": 5,
+            "passed": 5,
+            "failed": 0,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1782811188.9558966,
+            "stop": 1782811188.9865694
+        },
+        "tests": [
+            {
+                "name": "test_outputs.py::test_criterion_1_output_is_valid_json",
+                "status": "passed",
+                "duration": 0.0009838589994615177,
+                "start": 1782811188.97204,
+                "stop": 1782811188.975393,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_criterion_2_exact_fields_and_types",
+                "status": "passed",
+                "duration": 0.000611486000707373,
+                "start": 1782811188.975795,
+                "stop": 1782811188.9778597,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_criterion_3_path_parsing_rule_is_respected",
+                "status": "passed",
+                "duration": 0.0006625160003750352,
+                "start": 1782811188.9780917,
+                "stop": 1782811188.9805944,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_criterion_4_empty_path_case_is_supported",
+                "status": "passed",
+                "duration": 0.0007166619998315582,
+                "start": 1782811188.9808924,
+                "stop": 1782811188.9829576,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_criterion_5_ties_are_accepted_and_counts_match",
+                "status": "passed",
+                "duration": 0.0008387820007556002,
+                "start": 1782811188.983251,
+                "stop": 1782811188.985313,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            }
+        ]
+    }
+}

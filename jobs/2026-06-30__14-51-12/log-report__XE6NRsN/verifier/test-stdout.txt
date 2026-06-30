@@ -1,0 +1,111 @@
+============================= test session starts ==============================
+platform linux -- Python 3.11.15, pytest-8.4.1, pluggy-1.6.0
+rootdir: /tests
+plugins: json-ctrf-0.3.5
+collected 5 items
+
+../tests/test_outputs.py FFFFF                                           [100%]
+
+=================================== FAILURES ===================================
+____________________ test_criterion_1_output_is_valid_json _____________________
+
+    def test_criterion_1_output_is_valid_json():
+        """Success criterion 1: the output file must be valid JSON."""
+>       data = _load_report()
+               ^^^^^^^^^^^^^^
+
+/tests/test_outputs.py:38: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _load_report():
+        report_path = Path("/app/report.json")
+>       assert report_path.exists(), "no report.json found"
+E       AssertionError: no report.json found
+E       assert False
+E        +  where False = exists()
+E        +    where exists = PosixPath('/app/report.json').exists
+
+/tests/test_outputs.py:30: AssertionError
+___________________ test_criterion_2_exact_fields_and_types ____________________
+
+    def test_criterion_2_exact_fields_and_types():
+        """Success criterion 2: output contains exact fields and expected types."""
+>       data = _load_report()
+               ^^^^^^^^^^^^^^
+
+/tests/test_outputs.py:44: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _load_report():
+        report_path = Path("/app/report.json")
+>       assert report_path.exists(), "no report.json found"
+E       AssertionError: no report.json found
+E       assert False
+E        +  where False = exists()
+E        +    where exists = PosixPath('/app/report.json').exists
+
+/tests/test_outputs.py:30: AssertionError
+_______________ test_criterion_3_path_parsing_rule_is_respected ________________
+
+    def test_criterion_3_path_parsing_rule_is_respected():
+        """Success criterion 3: top_path is computed from the specified HTTP request regex."""
+>       data = _load_report()
+               ^^^^^^^^^^^^^^
+
+/tests/test_outputs.py:56: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _load_report():
+        report_path = Path("/app/report.json")
+>       assert report_path.exists(), "no report.json found"
+E       AssertionError: no report.json found
+E       assert False
+E        +  where False = exists()
+E        +    where exists = PosixPath('/app/report.json').exists
+
+/tests/test_outputs.py:30: AssertionError
+________________ test_criterion_4_empty_path_case_is_supported _________________
+
+    def test_criterion_4_empty_path_case_is_supported():
+        """Success criterion 4: if no request path is found, top_path must be empty."""
+>       data = _load_report()
+               ^^^^^^^^^^^^^^
+
+/tests/test_outputs.py:63: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _load_report():
+        report_path = Path("/app/report.json")
+>       assert report_path.exists(), "no report.json found"
+E       AssertionError: no report.json found
+E       assert False
+E        +  where False = exists()
+E        +    where exists = PosixPath('/app/report.json').exists
+
+/tests/test_outputs.py:30: AssertionError
+_____________ test_criterion_5_ties_are_accepted_and_counts_match ______________
+
+    def test_criterion_5_ties_are_accepted_and_counts_match():
+        """Success criterion 5: any tied top_path is accepted; counts must still match the log."""
+>       data = _load_report()
+               ^^^^^^^^^^^^^^
+
+/tests/test_outputs.py:71: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _load_report():
+        report_path = Path("/app/report.json")
+>       assert report_path.exists(), "no report.json found"
+E       AssertionError: no report.json found
+E       assert False
+E        +  where False = exists()
+E        +    where exists = PosixPath('/app/report.json').exists
+
+/tests/test_outputs.py:30: AssertionError
+=========================== short test summary info ============================
+FAILED ../tests/test_outputs.py::test_criterion_1_output_is_valid_json - Asse...
+FAILED ../tests/test_outputs.py::test_criterion_2_exact_fields_and_types - As...
+FAILED ../tests/test_outputs.py::test_criterion_3_path_parsing_rule_is_respected
+FAILED ../tests/test_outputs.py::test_criterion_4_empty_path_case_is_supported
+FAILED ../tests/test_outputs.py::test_criterion_5_ties_are_accepted_and_counts_match
+============================== 5 failed in 0.07s ===============================

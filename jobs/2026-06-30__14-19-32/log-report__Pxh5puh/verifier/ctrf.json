@@ -1,0 +1,1 @@
+{"results": {"tool": {"name": "pytest", "version": "unknown"}, "summary": {"tests": 1, "passed": 0, "failed": 1, "pending": 0, "skipped": 0, "other": 0, "start": 0, "stop": 0}, "tests": [{"name": "test_outputs", "status": "failed", "duration": 0}]}}

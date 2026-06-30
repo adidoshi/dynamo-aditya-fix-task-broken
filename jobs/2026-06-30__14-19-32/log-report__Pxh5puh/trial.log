@@ -1,0 +1,23 @@
+Skipping image OS validation for hb__584917501bbbb5c1f04647259c9221f4: docker inspect returned 1
+Collecting main service artifacts
+Failed to download artifact '/app/report.json' from service 'main' (best-effort)
+Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\trial\artifact_handler.py", line 330, in _download_artifact
+    await source_env.service_download_file(
+    ...<3 lines>...
+    )
+  File "C:\Users\DELL\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\environments\docker\docker.py", line 981, in service_download_file
+    await self.download_file(source_path, target_path)
+  File "C:\Users\DELL\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\environments\docker\docker.py", line 966, in download_file
+    await self._platform.download_file(source_path, target_path)
+  File "C:\Users\DELL\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\environments\docker\docker_unix.py", line 186, in download_file
+    await self._env._run_docker_compose_command(
+    ...<2 lines>...
+    )
+  File "C:\Users\DELL\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\environments\docker\docker.py", line 625, in _run_docker_compose_command
+    raise RuntimeError(
+    ...<5 lines>...
+    )
+RuntimeError: Docker compose command failed for environment log-report. Command: docker compose --project-name log-report__pxh5puh__env --project-directory E:\Developer 2026\Handshake AI\fix-task-broken\log-report\environment -f C:\Users\DELL\AppData\Local\Temp\tmpgjigl6h1\log-report__Pxh5puh__env-docker-compose-resources.json -f C:\Users\DELL\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\environments\docker\docker-compose-build.yaml -f C:\Users\DELL\AppData\Local\Temp\tmpfoflwr8d\docker-compose-mounts.json cp main:/app/report.json jobs\2026-06-30__14-19-32\log-report__Pxh5puh\artifacts\app\report.json. Return code: 1. Stdout:  log-report__pxh5puh__env-main-1 Copying log-report__pxh5puh__env-main-1:/app/report.json to jobs\2026-06-30__14-19-32\log-report__Pxh5puh\artifacts\app\report.json
+Error response from daemon: Could not find the file /app/report.json in container 1b46c907652479522f809701058d6bbde0cca348404b7cdb8462bb90a56a8192
+. Stderr: None. 

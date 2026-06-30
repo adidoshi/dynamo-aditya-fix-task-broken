@@ -1,0 +1,16 @@
+============================= test session starts ==============================
+platform linux -- Python 3.11.15, pytest-8.4.1, pluggy-1.6.0
+rootdir: /tests
+plugins: json-ctrf-0.3.5
+collected 5 items
+
+../tests/test_outputs.py .....                                           [100%]
+
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED ../tests/test_outputs.py::test_criterion_1_output_is_valid_json
+PASSED ../tests/test_outputs.py::test_criterion_2_exact_fields_and_types
+PASSED ../tests/test_outputs.py::test_criterion_3_path_parsing_rule_is_respected
+PASSED ../tests/test_outputs.py::test_criterion_4_empty_path_case_is_supported
+PASSED ../tests/test_outputs.py::test_criterion_5_ties_are_accepted_and_counts_match
+============================== 5 passed in 0.04s ===============================
